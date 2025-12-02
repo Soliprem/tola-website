@@ -1,7 +1,7 @@
 /* ==========================================================================
    1. VARIABLES & THEME CONFIGURATION
    ========================================================================== */
-@import "./themes/tailwind.css";
+@import "./themes/everforest-hard.css";
 
 /* Dark Mode Media Fixes */
 @media (prefers-color-scheme: dark) {

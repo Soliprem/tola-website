@@ -1,0 +1,53 @@
+/* --- Everforest Hard (Seamless Black) --- */
+:root {
+  /* Backgrounds: Darkened to blend with black pixel-art backgrounds */
+  --bg-body: #141b1e;       /* Almost Black */
+  --bg-header: #0f1416;     /* Deepest Black-Green */
+  --bg-surface: #1e2326;    /* Dark Surface */
+  --bg-code: #0f1416;       /* Deepest Black */
+
+  /* Text */
+  --text-main: #d3c6aa;     /* Warm White */
+  --text-head: #a7c080;     /* Signature Green */
+  --text-body: #d3c6aa;     /* Warm White */
+  --text-muted: #859289;    /* Muted Green-Grey */
+  --text-faint: #4f5b58;    /* Dark Green-Grey */
+
+  /* Borders */
+  --border-main: #2b3339;   /* Subtle Border */
+  --border-light: #323c41;  /* Lighter Border */
+
+  /* Accents */
+  --accent-primary: #a7c080;    /* Green (Primary) */
+  --accent-hover: #d699b6;      /* Purple (Contrast) */
+  --accent-decoration: #7fbbb3; /* Cyan (Underlines) */
+
+  --accent-success: #a7c080;    /* Green */
+  --accent-cursor: #dbbc7f;     /* Yellow (Matches your Elephant) */
+  --accent-code: #83c092;       /* Bright Green */
+  
+  /* Fonts */
+  --font-serif: 'Georgia', 'Times New Roman', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* --- Light Mode (Standard Everforest Light) --- */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-body: #fdf6e3;
+    --bg-header: #f3efda;
+    --bg-surface: #efebd4;
+    --bg-code: #f3efda;
+    --text-main: #5c6a72;
+    --text-head: #8da101;
+    --text-body: #5c6a72;
+    --text-muted: #939f91;
+    --text-faint: #829181;
+    --border-main: #d3c6aa;
+    --border-light: #e6e2cc;
+    --accent-primary: #3a94c5;
+    --accent-hover: #8da101;
+    --accent-decoration: #93b259;
+  }
+}
