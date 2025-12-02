@@ -1,6 +1,6 @@
 #import "../index.typ": *
 #show: template.with(
-  title: "Oltre la Curva a S:\ Un Approccio di Network alla Transizione Sostenibile della Mobilità Aerea",
+  title: "Oltre la Curva a S: Un Approccio di Network alla Transizione Sostenibile della Mobilità Aerea",
   date: "2025-11-20"
 )
 
