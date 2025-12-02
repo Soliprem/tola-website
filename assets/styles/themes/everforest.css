@@ -1,0 +1,56 @@
+/* --- Everforest Dark (Default) --- */
+:root {
+  /* Backgrounds */
+  --bg-body: #2b3339;       /* bg_dark (Hard) */
+  --bg-header: #232a2e;     /* bg_dim */
+  --bg-surface: #323c41;    /* bg0 */
+  --bg-code: #232a2e;       /* bg_dim */
+
+  /* Text */
+  --text-main: #d3c6aa;     /* fg */
+  --text-head: #a7c080;     /* green (Signature nature look) */
+  --text-body: #d3c6aa;     /* fg */
+  --text-muted: #9da9a0;    /* grey2 */
+  --text-faint: #859289;    /* grey1 */
+
+  /* Borders */
+  --border-main: #323c41;   /* bg0 */
+  --border-light: #4a555b;  /* bg2 */
+
+  /* Accents */
+  --accent-primary: #7fbbb3;    /* blue */
+  --accent-hover: #a7c080;      /* green */
+  --accent-decoration: #d699b6; /* purple */
+
+  --accent-success: #a7c080;    /* green */
+  --accent-cursor: #dbbc7f;     /* yellow */
+  --accent-code: #83c092;       /* aqua */
+
+  /* Fonts (Inherited) */
+  --font-serif: 'Georgia', 'Times New Roman', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* --- Everforest Light (System Override) --- */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-body: #fdf6e3;       /* bg_soft */
+    --bg-header: #f3efda;     /* bg_dim */
+    --bg-surface: #efebd4;    /* bg0 */
+    --bg-code: #f3efda;       /* bg_dim */
+
+    --text-main: #5c6a72;     /* fg */
+    --text-head: #8da101;     /* green (Darker for readability) */
+    --text-body: #5c6a72;     /* fg */
+    --text-muted: #939f91;    /* grey1 */
+    --text-faint: #829181;    /* grey2 */
+
+    --border-main: #d3c6aa;   /* bg4 */
+    --border-light: #e6e2cc;  /* bg2 */
+
+    --accent-primary: #3a94c5;    /* blue */
+    --accent-hover: #8da101;      /* green */
+    --accent-decoration: #93b259; /* green-light */
+  }
+}
