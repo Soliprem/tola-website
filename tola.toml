@@ -26,7 +26,7 @@ path = "sitemap.xml"
 
 [build.slug]
 path = "safe"
-fragment = "on"
+fragment = "safe"
 
 [build.typst]
 command = ["typst"]
