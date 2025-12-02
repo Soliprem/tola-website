@@ -693,6 +693,8 @@ body.inline-notes .sidenote-content::after {
     font-size: 1rem;
   }
 }
+
+/* FIXME: this probably should be done differently*/
 section[role="doc-endnotes"] {
   display: none !important;
 }
