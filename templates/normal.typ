@@ -50,6 +50,18 @@
             #html.elem("a", attrs: (href: "/posts/"), "~/posts")
             #html.elem("a", attrs: (href: "/about/"), "~/about")
             #html.elem("a", attrs: (href: "/contact/"), "~/contacts")
+            #context {
+              let fn-count = counter(footnote).final().at(0)
+              if fn-count > 0 {
+                html.elem("button", 
+                  attrs: (
+                    onclick: "toggleFn()", 
+                    class: "fn-toggle-btn"
+                  ), 
+                  "[toggle-notes]"
+                )
+              }
+            }
         ])
       ])
 
@@ -62,15 +74,6 @@
           #if date != none [
             #html.elem("time", attrs: (datetime: date, class: "page-date text-gray-500 font-mono text-sm"), [#date])
           ]
-
-            // Moved Toggle Button Here
-            #html.elem("button", 
-              attrs: (
-                onclick: "toggleFn()", 
-                class: "fn-toggle-btn"
-              ), 
-              "[toggle-notes]"
-            )
         ])
       ]
       #body
