@@ -1,9 +1,9 @@
 [base]
-title = ""
-author = "<YOUR_NAME>"
-email = "user@noreply.tola"
+title = "Soliprem"
+author = "Francesco Prem Solidoro"
+email = "me@soliprem.eu"
 description = ""
-language = "zh-Hans"
+language = "en"
 copyright = ""
 
 [build]
@@ -36,8 +36,9 @@ inline_max_size = "20KB"
 dpi = 96.0
 
 [build.tailwind]
-enable = false
+enable = true
 command = ["tailwindcss"]
+input = "./assets/styles/style.css"
 
 [build.head]
 styles = []

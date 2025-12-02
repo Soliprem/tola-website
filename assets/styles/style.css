@@ -1,0 +1,256 @@
+/* Dark Mode Typst HTML Styling with Tailwind */
+@media (prefers-color-scheme: dark) {
+    [role="math"] :is(img, svg, canvas, picture, video, object, embed) {
+        filter: invert(1) hue-rotate(180deg);
+    }
+}
+
+/* Container and layout */
+body {
+  @apply bg-gray-900 text-gray-100 leading-relaxed;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+/* Main content wrapper - Typst typically wraps content in a main or article */
+main, article {
+  @apply max-w-3xl mx-auto px-6 py-12;
+  position: relative;
+}
+
+/* Headings */
+h1 {
+  @apply text-4xl md:text-5xl font-bold text-gray-50 mb-6 mt-8 leading-tight;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+h2 {
+  @apply text-3xl md:text-4xl font-bold text-gray-100 mb-4 mt-10 leading-snug border-b-2 border-gray-700 pb-2;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+h3 {
+  @apply text-2xl md:text-3xl font-semibold text-gray-100 mb-3 mt-8;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+h4 {
+  @apply text-xl md:text-2xl font-semibold text-gray-200 mb-2 mt-6;
+}
+
+h5 {
+  @apply text-lg md:text-xl font-semibold text-gray-200 mb-2 mt-4;
+}
+
+h6 {
+  @apply text-base md:text-lg font-semibold text-gray-300 mb-2 mt-4;
+}
+
+/* Paragraphs */
+p {
+  @apply mb-4 text-gray-300 text-lg leading-relaxed;
+}
+
+/* Links */
+a {
+  @apply text-blue-400 hover:text-blue-300 underline decoration-blue-600 hover:decoration-blue-400 transition-colors duration-200;
+}
+
+/* Lists */
+ul {
+  @apply list-disc list-inside mb-4 space-y-2 text-gray-300 ml-4;
+}
+
+ol {
+  @apply list-decimal list-inside mb-4 space-y-2 text-gray-300 ml-4;
+}
+
+li {
+  @apply text-lg leading-relaxed;
+}
+
+li > ul, li > ol {
+  @apply mt-2 ml-6;
+}
+
+/* Blockquotes */
+blockquote {
+  @apply border-l-4 border-blue-500 pl-6 py-2 my-6 italic text-gray-400 bg-gray-800 rounded-r;
+}
+
+/* Code blocks */
+pre {
+  @apply bg-black text-gray-100 rounded-lg p-6 mb-4 overflow-x-auto text-sm leading-relaxed shadow-xl border border-gray-800;
+}
+
+code {
+  @apply bg-gray-800 text-emerald-400 px-2 py-1 rounded text-sm font-mono;
+}
+
+pre code {
+  @apply bg-transparent text-gray-100 p-0;
+}
+
+/* Tables */
+table {
+  @apply w-full border-collapse mb-6 shadow-lg;
+}
+
+thead {
+  @apply bg-gray-800 text-gray-100;
+}
+
+th {
+  @apply px-4 py-3 text-left font-semibold border border-gray-700;
+}
+
+td {
+  @apply px-4 py-3 border border-gray-700 text-gray-300;
+}
+
+tbody tr {
+  @apply bg-gray-900 hover:bg-gray-800 transition-colors;
+}
+
+tbody tr:nth-child(even) {
+  @apply bg-gray-800;
+}
+
+/* Horizontal rules */
+hr {
+  @apply my-8 border-t-2 border-gray-700;
+}
+
+/* Images */
+img {
+  @apply max-w-full h-auto rounded-lg shadow-xl my-6 border border-gray-800;
+}
+
+/* Figure captions (if Typst outputs them) */
+figure {
+  @apply my-8;
+}
+
+figcaption {
+  @apply text-center text-sm text-gray-400 mt-2 italic;
+}
+
+/* Footnotes styling */
+section[role="doc-endnotes"] {
+  @apply mt-12 pt-8 border-t-2 border-gray-700;
+}
+
+section[role="doc-endnotes"] ol {
+  @apply list-none ml-0 space-y-4;
+}
+
+section[role="doc-endnotes"] li[id^="loc-"] {
+  @apply text-sm text-gray-400 leading-snug;
+}
+
+sup a[role="doc-backlink"] {
+  @apply text-blue-400 no-underline font-normal;
+}
+
+/* On larger screens, push footnotes to the margin */
+@media (min-width: 1280px) {
+  body {
+    @apply overflow-x-visible;
+  }
+  
+  main, article {
+    @apply pr-72;
+    max-width: 48rem;
+  }
+  
+  section[role="doc-endnotes"] {
+    @apply border-t-0 mt-0 pt-0;
+  }
+  
+  section[role="doc-endnotes"] ol {
+    @apply space-y-0;
+  }
+  
+  section[role="doc-endnotes"] li[id^="loc-"] {
+    position: absolute;
+    right: -16rem;
+    width: 15rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0;
+    border-left: 2px solid theme('colors.gray.700');
+  }
+}
+
+/* Strong and emphasis */
+strong {
+  @apply font-bold text-gray-50;
+}
+
+em {
+  @apply italic;
+}
+
+/* Small text */
+small {
+  @apply text-sm text-gray-500;
+}
+
+/* Definition lists (if used) */
+dl {
+  @apply mb-4;
+}
+
+dt {
+  @apply font-semibold text-gray-100 mt-4;
+}
+
+dd {
+  @apply ml-6 text-gray-300;
+}
+
+/* Header/navigation area */
+header {
+  @apply bg-gray-950 border-b border-gray-800 shadow-lg sticky top-0 z-50;
+}
+
+header nav {
+  @apply max-w-3xl mx-auto px-6 py-4 flex justify-between items-center;
+}
+
+header a {
+  @apply no-underline text-gray-300 hover:text-gray-100 font-medium;
+}
+
+/* Footer */
+footer {
+  @apply bg-gray-950 border-t border-gray-800 mt-16 py-8 text-center text-gray-400 text-sm;
+}
+
+/* Selection color */
+::selection {
+  @apply bg-blue-600 text-white;
+}
+
+/* Scrollbar styling (webkit browsers) */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-700 rounded-full hover:bg-gray-600;
+}
+
+/* Responsive font scaling */
+@media (max-width: 640px) {
+  body {
+    @apply text-base;
+  }
+  
+  p, li {
+    @apply text-base;
+  }
+}

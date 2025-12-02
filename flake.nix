@@ -21,6 +21,7 @@
           buildInputs = with pkgs; [
             nushell
             tola.packages.${pkgs.system}.default
+            tailwindcss
           ];
           shellHook = ''
             export SHELL=${pkgs.nushell}/bin/nu
