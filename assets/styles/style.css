@@ -693,3 +693,6 @@ body.inline-notes .sidenote-content::after {
     font-size: 1rem;
   }
 }
+section[role="doc-endnotes"] {
+  display: none !important;
+}

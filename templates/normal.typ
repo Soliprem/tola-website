@@ -15,7 +15,7 @@
     let note = it.body
     html.elem("span", attrs: (class: "sidenote-wrapper", tabindex: "0"), [
       #super(context counter(footnote).display())
-      #html.elem("span", attrs: (class: "sidenote-content"), note)
+      #html.elem("span", attrs: (class: "sidenote-content"), [#super(context counter(footnote).display())#note])
     ])
   }
 
