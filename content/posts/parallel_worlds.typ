@@ -5,9 +5,9 @@
 )
 
 #let definition(name, body, fill: gray) = {
-  quote[body]
+  quote(block: true)[#body]
 }
-
+#outline()
 = Introduction
 Donald Trump won a second term in the White House, with economic concerns being a primary factor in voter turnout. His campaign strategy echoed Ronald Reagan’s historical slogan, 'Are you better off?', when he left office with record-high unemployment and a crashing economy barreling towards a global financial crisis. The following 4 years from the Biden administration have instead been nothing short of a miraculous recovery for the American economy, with the US outperforming every other country under every measurable metric, from inflation to unemployment, to investment into future periods. Yet the question: "are you better off?" was met with a resounding "no" on November 5th. There's a clear disconnect between reality and its perception, that was simply not present in the past. We argue that it only became sustainable with the advent of the Internet and its ability to form social bubbles, where an idea can instill itself as socially hegemonous, without the constraint of geographic proximity that it had in the past. In the US, it's possible to hear pundits say that "going to the gym has somehow become a right-wing thing". This reflects on the historically common politicization of every-day aspects of life, which is however getting to combined to the very human tendency to form more in-group than out-group ties, and the unparalleled level of choice in relationships and sources of information offered by the advent of the Internet and, especially, social media. We argue that this combination has lead to a level of division within society on a day-to-day level that allows people to have totally different views of _facts_, where before they could only differ in _interpretation_ and _opinion_ on said facts. It's possible for a voter to believe that fluoride shouldn't be used in public water systems, because all it takes is for it to become the culturally hegemonic point of view in its media environment. This can happen through pure media manipulation, thanks to the lack of filter between politicians, citizens and campaigns such as astroturf operations.
 
@@ -391,4 +391,4 @@ By polarizing the victims, astroturf campaigns contribute in exacerbating the pr
 
 In this sense, Astroturf poses a threat to the critical function a "civil" civil society @poison-astro needs to perform in order to maintain democratic institutions.
 
-#bibliography("bib.yaml", title: "References")
+#bibliography("assets/soli_list.yml", title: "References")

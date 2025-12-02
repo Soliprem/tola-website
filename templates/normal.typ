@@ -18,6 +18,15 @@
       #html.elem("span", attrs: (class: "sidenote-content"), note)
     ])
   }
+
+  show outline: it => {
+      html.elem("details", attrs: (class: "toc-wrapper"), [
+        #html.elem("summary", attrs: (class: "toc-header"), [
+          #html.elem("span", "Table of Contents")
+        ])
+        #html.elem("div", attrs: (class: "toc-content"), it)
+      ])
+    }
   
   show math.equation.where(block: false): it => if not inside-figure.get() {
     html.elem("span", attrs: (class: "inline-block", role: "math"), html.frame(it))
@@ -40,6 +49,7 @@
             #html.elem("a", attrs: (href: "/"), "~/")
             #html.elem("a", attrs: (href: "/posts/"), "~/posts")
             #html.elem("a", attrs: (href: "/about/"), "~/about")
+            #html.elem("a", attrs: (href: "/contact/"), "~/contacts")
         ])
       ])
 

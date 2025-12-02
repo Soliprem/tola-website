@@ -17,7 +17,7 @@ minify = true
 
 [build.rss]
 enable = false
-path = "feed.xml"
+path = "posts/index.xml"
 
 [build.sitemap]
 enable = false

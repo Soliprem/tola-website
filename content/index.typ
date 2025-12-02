@@ -17,17 +17,15 @@
   scope: "column"
 )
 
-== About
+Welcome to my corner of the web. I'm a student, hobby dev, and enthusiast of all things complex, networks, and open-source.
 
-Welcome to my corner of the web. I'm a student, developer, and enthusiast of all things Nix, networks, and open-source.
+== What I'm Up To
 
-== Contact
+=== Current Projects
 
-Reach out through any of these channels:
-
-- *Email:* #link("mailto:me@soliprem.eu")[me\@soliprem]
-- *Matrix:* #link("https://matrix.to/#/@soliprem:beeper.com")[\@soliprem:beeper.com]
-- *GitHub:* #link("https://github.com/soliprem")[github.com/soliprem]
+- *This website* — Rebuilding it from scratch using Typst for content generation
+- *Server infrastructure* — Rewriting my homelab configuration with NixOS
+- *#link("https://github.com/notashelf/nvf")[NVF]* — Contributing to Neovim configuration with Nix flakes
 
 == Webrings
 
@@ -36,26 +34,3 @@ Reach out through any of these channels:
 #link("https://nixwebr.ing/rand")[random] · 
 #link("https://nixwebr.ing/next/soliprem")[next →]
 
----
-
-= What I'm Up To
-
-== Current Projects
-
-- *This website* — Rebuilding it from scratch using Typst for content generation
-- *Server infrastructure* — Rewriting my homelab configuration with NixOS
-- *#link("https://github.com/notashelf/nvf")[NVF]* — Contributing to Neovim configuration with Nix flakes
-
-== Studies
-
-Currently pursuing $"LM(EC)"^2$ (Master's in Economics) at the University of Bologna.
-
-== Interests & Explorations
-
-- *Webrings* — Rediscovering the old web, one ring at a time
-- *Computer networks* — Building, breaking, and understanding distributed systems  
-- *Continuous learning* — Always exploring new technologies and ideas
-
----
-
-_Last updated: 2025-11-20_

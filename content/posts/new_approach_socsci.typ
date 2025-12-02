@@ -5,7 +5,7 @@
 )
 
 = A new interdisciplinary approach to the study of social sciences | Introduction
-
+#outline()
 == Hard, Social, Sciences
 
 In the study of phenomena it's common to look for reductionist perspectives. In

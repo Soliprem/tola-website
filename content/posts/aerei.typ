@@ -4,10 +4,8 @@
   date: "2025/11/20"
 )
 
-= Classici modelli di diffusione
-
 #set text(lang: "it")
-
+#outline()
 = Introduzione
 Durante il corso si è molto discusso delle componenti tecniche che delineano le difficoltà di implementazione di una mobilità aerea sostenibile. Allo stesso tempo, sono stati presentati diversi degli avanzamenti che sono stati raggiunti da un punto di vista tecnologico per arrivare ad una mobilità aerea che sia in effetti sostenibile. Per quanto non sia possibile mettere in dubbio la necessità di un'analisi tecnica —per ovvie ragioni—, trovo altrettanto essenziale analizzare come questi avanzamenti poi si diffondano all'interno della società. A tal proposito, in questo elaborato vorrei analizzare 3 componenti: In primis, un approccio classico (teorie basate su pattern assodati, in particolare la famosissima _S curve_). In secondo luogo, un'analisi sui possibili ostacoli di mercato, in particolare quelli legati alla specifica industria della mobilità aerea#footnote[ci sono diversi possibili esempi a cui uno può attingere. In particolare mi concentrerò sulla natura oligopolica del mercato, e di una forte discrepanza nell'elasticità fra tipi di viaggiatori diversi]. Infine, un'osservazione sommaria su teorie che personalmente trovo più interessanti: formulazioni della diffusione come analisi di network. Quest'ultimo approccio in particolare è interessante se informato da principi tratti dal secondo, e testato su dati assodati raccolti nei casi studio che formulano il primo. La componente sperimentale è fuori dal campo di questo elaborato, che si limiterà a fare un'analisi esplorativa usando dati esistenti.
 

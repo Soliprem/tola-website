@@ -1,3 +1,6 @@
+#import "index.typ": *
+#show: template
+
 = About
 
 My name is Francesco, and I'm a 22-years-old student at the university of
