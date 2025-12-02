@@ -2,8 +2,6 @@
 #import "@preview/sicons:15.13.0": *
 
 #show: template.with(
-  title: "Index",
-  date: "2025-11-20"
 )
 
 = Soliprem

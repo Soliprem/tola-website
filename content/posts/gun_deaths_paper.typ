@@ -1,7 +1,7 @@
 #import "../index.typ": *
 #show: template.with(
-  title: "",
-  date: ""
+  title: "An analysis of the correlation between gun regulation and public safety in the USA",
+  date: "02/04/2024"
 )
 
 = Introduction
@@ -95,27 +95,27 @@ The data obtained was formatted in the following way:
 
 The Gun Deaths dataset shows the average deaths per year to be 515.34, with a standard deviation of 605.09 #footnote([this is not a typo, it's a quirk of the average spanning across several years]), the death rate instead has an average of 11.90% and a standard deviation of 4.67%, these descriptive statistics, although weak alone, show a variance of considerabe size.
 
-#image("Plots/Descriptive_plots/Deaths_and_Population.png")
-#image("Plots/Descriptive_plots/Gun_Deaths_and_Population_over_time_(by_year).png")
+#image("./assets/Plots/Descriptive_plots/Deaths_and_Population.png")
+#image("./assets/Plots/Descriptive_plots/Gun_Deaths_and_Population_over_time_(by_year).png")
 
 The graphs show the variance and its evolution over time.
 
 To aid visualization we also constructed a histogram representing the death count for each state
-#image("Plots/Descriptive_plots/Deaths_Histogram.png")
+#image("./assets/Plots/Descriptive_plots/Deaths_Histogram.png")
 
 
 === Dataset 2
 
 For the law provision dataset the mean of the law total is 24.92, with a standard deviation of  23.60, instead the mean of the Gun Regualtion Index is 0.21, with a standard deviation of 0.23, again showing a big variance in our data.
 
-#image("Plots/Descriptive_plots/Gun_Regulation_index_in_states.png")
+#image("./assets/Plots/Descriptive_plots/Gun_Regulation_index_in_states.png")
 
 As it's easily interpretable, most of the states kept a very low index for the time period analyzed in this study, but there are instances of some states, for example the state of California, keeping very high Index values across the whole time period. This wide gap was not a surprise, as the difference of positions of prominent political figures in the respective states are pretty representative of their, -be it high or low-, index score.
-#image("Plots/Descriptive_plots/Gun_Regulation_Index_over_time_(by_state).png")
+#image("./assets/Plots/Descriptive_plots/Gun_Regulation_Index_over_time_(by_state).png")
 
 In order to understand the importance of the division of the states in accordance to their scores, it's important to visualize the position of the US states, as the differences will become very apparent.
 
-#image("Plots/Descriptive_plots/Index_score_count.png")
+#image("./assets/Plots/Descriptive_plots/Index_score_count.png")
 
 This bar chart represents the scores of all the US states across our 19 year time period, and it's pretty easy to say that seeing these discrepancies also shaped our future analyisis and prompted us towards conducting it by keeping track at all times of each state's score.
 
@@ -126,21 +126,21 @@ The mean of the violent crimes is 26976.7 per year, with a standard deviation of
 
 Once again, a high variance is observable across all of our data, again suggesting the importance of a criteria of distinction (in our case the index score) in the state-level analysis to capture efficiently correlations and statistically useful results.
 
-#image("Plots/Descriptive_plots/Violent_crime_rate_and_population.png")
-#image("Plots/Descriptive_plots/Violent_crime_rate_over_time_by_state.png")
+#image("./assets/Plots/Descriptive_plots/Violent_crime_rate_and_population.png")
+#image("./assets/Plots/Descriptive_plots/Violent_crime_rate_over_time_by_state.png")
 == Explorative Analysis
 Having established the nature and characteristics of the three datasets, we now proceed to conduct an analysis of the combination of their data. The aim of this analysis is to establish the impact (or lack there of) of legislation on gun death rates. In order to do so, we first seek to check for the presence of correlation, and then formulate a linear regression model. We then will try to integrate data from possibly correlated variables in an attempt to remove omitted variable bias, and thus create a multiple linear regression model.\
 The explorative analysis began by plotting and calculating the mean gun death rate (by 100,000) over time, and comparing it with the mean Gun Regulation index over time.
-#image("Plots/Explorative_plots/Death_rate_vs_Gun_Regulation.png")
+#image("./assets/Plots/Explorative_plots/Death_rate_vs_Gun_Regulation.png")
 
 At a first glance just by looking at the graphs side to side may lead us to think that even if the Gun Regulation Index has been rising over time the Deaths by guns still don'show any signs of decreasing, but a closer inspection reveals that the Gun Regulation Index over nineteen years has only increased by a meager 0.04% and to discern a pattern we need to go deeper and look for substantial causal effects.
 
 By calulating the Pearson correlation between the Gun Regulation Index and the gun death rate we're returned with a value -0.624, suggesting a non-negligible negative correlation between them
 
-#image("Plots/Explorative_plots/General_gdvsgr.png")
+#image("./assets/Plots/Explorative_plots/General_gdvsgr.png")
 
 By plotting them in the same graph the negative correlation becomes obvious, but we can also notice the skewedness of observations towards the low values of the Gun Regulation Index, so in accordance to our prior suggestion we split the observations in accordance with their own Index score bracket and run the same analysis.
-#image("Plots/Explorative_plots/comb_gdvsgr.png")
+#image("./assets/Plots/Explorative_plots/comb_gdvsgr.png")
 By splitting the observations we get a clearer image: the -0.624 correlation isn't consistent across all states, but the pattern can still be observed.
 
 The correlations for each groups are as follows:
@@ -157,11 +157,11 @@ This number may seem absurdly big, but during the interpretation it is useful to
 
 To supplement the current model with regards to the general unreliability and susceptibility to outliers of linear regression, and the possible presence of omitted variable bias, we decided to aid our analysis with the inclusion of the third dataset, with the aim of constructing some additional linear models and useful plots.
 
-#image("Plots/Explorative_plots/VCR_vs_DR_vs_GR.png")
+#image("./assets/Plots/Explorative_plots/VCR_vs_DR_vs_GR.png")
 Before cimenting ourselves into the actual model building, we included the evolution of the mean violent crime rate over time and, once again an immediate analysis may lead us to think that as the Gun Regulation Index increased the violent crime rate decreased, and this is also supported by the correlation between them (-0.293), and their plot.
-#image("Plots/Explorative_plots/Violent_crime_vs_index_allstates.png")
+#image("./assets/Plots/Explorative_plots/Violent_crime_vs_index_allstates.png")
 But we very quickly found out that this plot is actually very misleading, and the analysis on subset of states havin similar score is more interesting.
-#image("Plots/Explorative_plots/Violent_crime_vs_index_comb.png")
+#image("./assets/Plots/Explorative_plots/Violent_crime_vs_index_comb.png")
 Now that the plots are much clearer, while our pattern in the sheer size of the negative correlation between our values in medium score states is visible to the naked eye, we can also observe some instances of positive correlations in some of the following cases:
 - Very low score states = -0.0596
 - Low score states =  0.403
@@ -173,10 +173,10 @@ While the social interpretation of these findings is out of the scope of this st
 Building a linear model emphasizes this finding since it returned us a value of 6.896 for the intercept and of -3.335 for our Gun Regulation Index.\
 \
 Now, we may also be interested in the relationship between gun deaths and the violent crime rate, so we calculated once again the correlation between them and obtained a value of 0.471, showing that indeed they are correlated.
-#image("Plots/Explorative_plots/Violent_crime_vs_Gun_death_allstates.png")
+#image("./assets/Plots/Explorative_plots/Violent_crime_vs_Gun_death_allstates.png")
 
 Now,to understand relationships on a deeper level, we once again divided the states in accordance to their score.
-#image("Plots/Explorative_plots/Violent_crimes_vs_gun_deaths_comb.png")
+#image("./assets/Plots/Explorative_plots/Violent_crimes_vs_gun_deaths_comb.png")
 
 In this case we can observe that all of our brackets contain some level of positive correlation, in particular:
 - Very low score states = 0.371
@@ -199,7 +199,7 @@ With the construction of the Multiple linear regression model we obtained the va
 Even if the coefficient of the violent crime rate returned pretty small values, since also the intercept and the coefficient for Gun Regulation got smaller means that we achieved our aim of covering some of the unexplained variance.
 
 We then plot these results in a 3d interactive plot (available for download in the GitHub repository for this study and #link("https://soliprems.web.app/gd_gr_vc_3dplot.html", "here")), that due to the limitations of pdfs can be relayed here only in the form of an image.
-#image("Plots/Explorative_plots/gd_gr_vc_plot.png")
+#image("./assets/Plots/Explorative_plots/gd_gr_vc_plot.png")
 = Conclusions
 The relationship that emerges from the data is clear, even if not perfectly consistent: there's a negative correlation between our gun provision index and the gun death rate. This correlation gets weaker with the introduction of violent crime rates as a regressor in the linear regression model, but it remains negative on the whole (although it becomes positive in the case of low and high score states. It's worth noting that they're a much smaller sample than the very low score states, which remains negative. This is visible by the total remaining overall negative).\
 While the policy analysis is complicated, this would seem to suggest that it's possible, although obviously not guaranteed, to write legislation that aims and achieves and improvement in the number of gun-related deaths.
@@ -222,4 +222,4 @@ Contributed to the idealization of the project, organization, and provided a rei
 
 === Elena Rocco
 Contributed to the idealization of the project, organization, and provided a reiview of the work.
-#bibliography("refs.yml")
+#bibliography("./assets/soli_list.yml")

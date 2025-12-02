@@ -1,7 +1,7 @@
 #import "../index.typ": *
 #show: template.with(
   title: "Mobilità Aerea Sostenibile",
-  date: "2025-11-20"
+  date: "2025/11/20"
 )
 
 = Classici modelli di diffusione
@@ -15,7 +15,7 @@ Durante il corso si è molto discusso delle componenti tecniche che delineano le
 
 Tutti conosciamo il classico grafico ad S (@grafico-s).
 
-#figure(caption: [curva dell'adozione di una tecnologia],  image("./s-curve.png")) <grafico-s>
+#figure(caption: [curva dell'adozione di una tecnologia],  image("./assets/s-curve.png")) <grafico-s>
 
 In questo grafico, ovviamente basato su grandi quantità di aggregazione ed astrazione di movimenti che raramente sono interamente così lisci e "lineari" (si tratta infatti della funzione cumulativa di una distribuzione normale), viene reso evidente un trend che viene corroborato molto dai dati (@grafici-s): nuove tecnologie (od idee, in modo più generalizzabile) tendono ad avere distinte "fasi" di adozioni, distinte dalla velocità di espansione della loro adozione. 
 
@@ -25,7 +25,7 @@ Questi dati si prestano a varie interpretazioni. Nella loro versione più basila
 - Implica un'impossibilità di intervenire: secondo quest'analisi ogni prodotto ha esattamente il numero di utenti che si "merita" in un dato momento.
 - È "pigra", perché non fornisce meccanismi causali espliciti. È l'equivalente di —in economia— proporre che certe azioni sono semplicemente dettate da una preferenza insindacabile di un agente#footnote[l'esempio che comunemente viene portato è quello delle recessioni: è possibile sostenere che l'intera popolazione abbia semplicemente deciso simultaneamente di spendere meno perché si è svegliata storta. Ovviamente non è una spiegazione a cui viene dato particolare valore, per quanto sarebbe una spiegazione valida da un punto di vista strettamente modellistico, essendo le preferenze una possibile primitiva nei modelli microeconomici.].
 
-#figure(caption: [Dati corroboranti dell'idea delle curve ad S], image("./s-curves.png")) <grafici-s>
+#figure(caption: [Dati corroboranti dell'idea delle curve ad S], image("./assets/s-curves.png")) <grafici-s>
 
 Osservando quindi dei grafici che raffigurino dei dati reali e non un'astrazione, possiamo osservare dei trend in più che possano permetterci di formulare dei modelli più utili. 
 
@@ -151,12 +151,12 @@ Al fine di visualizzare concretamente il vantaggio teorico discusso, ho implemen
 Come evidenziato dai risultati in @simulazione-budget, l'utilizzo di qualunque degli indicatori suggeriti (Grado o Intermediazione) garantisce una diffusione dell'innovazione sistematicamente superiore rispetto ad una distribuzione casuale del budget di sussidio.
 
 #figure(
-  image("./simulation-with-budget.png"),
+  image("./assets/simulation-with-budget.png"),
   caption: [Confronto dell'efficacia: in grassetto sono rappresentati i valori medi dei percorsi di diffusione. Il Network su cui si sta propagando è un Barabasi-Albert da 1000 nodi e $gamma=3$]
 ) <simulazione-budget>
 
 #figure(
-  image("./simulation-with-budget-high-sample.png"),
+  image("./assets/simulation-with-budget-high-sample.png"),
   caption: [Rispetto all'immagine precedente, usa un network di 10.000 nodi. Si può osservare che mentre la varianza dei percorsi strategici collassa, quella del percorso casuale rimane alta]
 ) <simulazione-budget-high-sample>
 
@@ -212,7 +212,7 @@ Infine, abbiamo proposto un approccio strutturale basato sulla Teoria dei Networ
 
 La proposta di policy che ne deriva è un sistema ibrido: una tassa Pigouviana per internalizzare i costi ambientali, i cui proventi vengono ridistribuiti non uniformemente, ma strategicamente, mirando ai nodi ad alto indice $W(x)$. Sfruttando la struttura del network e forzando l'adozione nei nodi che fungono da ponte e da hub, possiamo innescare quella cascata di adozione necessaria per spostare l'industria dall'equilibrio di stagnazione attuale verso un futuro sostenibile. La sostenibilità, in ultima analisi, non è solo un problema di ingegneria aerospaziale, ma anche un problema di coordinamento economico su rete complessa.
 
-#bibliography("soli_list.yml")
+#bibliography("./assets/soli_list.yml")
 
 #set text(font: "Courier New", size: 8pt)
 = Appendice: Codice della Simulazione

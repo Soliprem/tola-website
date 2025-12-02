@@ -1,7 +1,7 @@
 #import "../index.typ": *
 #show: template.with(
-  title: "",
-  date: ""
+  title: "La figura di Shostakovich come un Sisifo moderno",
+  date: "18/04/2024"
 )
 
 = La figura di Shostakovich come un Sisifo moderno
@@ -17,10 +17,10 @@ Un caso emblematico di questo periodo è la Quinta. Pubblicata accompagnata da u
 Un caso analogo è la Settima, scritta durante l'assedio di Leningrado da parte dei nazisti. La sinfonia viene ricevuta dal partito con sufficiente calore da fare escogitare all'esercito nazista un piano per interromperne la prima. Il partito la vede come una celebrazione delle vittorie militari dell'unione, ed una critica sferrata al regime nazista. Shostakovich rileva che non si tratta di una critica indirizzata solo ai nazisti ma 'anche al nostro sistema', o meglio, a tutti i totalitarismi.
 === La musica da camera
 Mentre la musica orchestrale era sotto strettissimo scrutinio, nello scrivere musica da camera, Shostakovich poteva sentirsi più libero. È qui che si vedono le sperimentazioni più grandi, e che si snte la voce cruda e ruvida del compositore. È qui che, nel piccolo della musica da camera, Shostakovich Protesta le ingiustizie che percepisce nel mondo. nel 1944, quando iniziano a sentirsi voci dell'Olocausto che stava avvenendo in Germania; Shostakovich nello stesso periodo perde un caro amico, che per caso o per destino è ebreo. L'autore quindi, già solito includere passaggi in Frigia dominante, (in Yiddish, _Freygish_. @yiddish) compone un trio di pianoforte d'archi in cui essa compare straziata, portata all'estremo del grottesco. Questa, rivela a corrispondenti, è una critica non solo all'antisemitismo della Geramania nazista, ma anche all'antisemitismo in Russia, che sopprime anch'essa la cultura ebraica in questo periodo storico.
-#figure(image("images/ahava-rabbah.jpg", width:70%), caption: [scala frigia alterata]) <yiddish>
+#figure(image("assets/ahava-rabbah.jpg", width:70%), caption: [scala frigia alterata]) <yiddish>
 Dichiarazioni di questo tipo non sono insolite per Shostakovich. Soprattutto nella musica da camera, non è insolito che riversi una parte delle sue sofferenze nella forma di una composizione. Questo è chiaramente visibile in composizioni come l'ottavo quartetto d'archi, pensato da molti essere scritto inizialmente come una lettera di suicidio.\
 Questo viene detto perchè all'interno del quartetto si trovano riferimenti a tutti i suoi temi più grandi, perchè una delle "idee" principali è la sua firma (che usa frequentemente nelle sue composizioni, ma non in questa quantità. @dsch). In questa composizione ritorna il tema straziato del matrimonio ebraico, vengono ripresi temi dalle sue opere sinfoniche, da Lady Machbet, e dei suoi quartetti precedenti, ed idee da varie sue composizioni.\
-#figure(image("images/dsch.jpg", width:34%), caption: [il tema *D* imitri *S* hostakovi *CH* (in notazione tedesca), firma di Shostakovich che inserisce in molte composizioni]) <dsch>
+#figure(image("assets/dsch.jpg", width:34%), caption: [il tema *D* imitri *S* hostakovi *CH* (in notazione tedesca), firma di Shostakovich che inserisce in molte composizioni]) <dsch>
 Personalmente, sono dell'idea che il quartetto d'archi non sia semplicemente una lettera di suicidio, ma una lettera di salvezza: un grande atto di Ribellione che riassuma quella che ha intessuto nelle sue composizioni nell'arco della sua vita, che in modo sisifico lo riporta dall'orlo del baratro in cui si trovava, pronto a ripartire.
 == Magnum Opus
 La Nona sinfonia. Il nome da solo è già evocativo: la Nona di Behetoven, la Nona di Bruckner, la Nona di Mahler. Stalin, conoscendo bene il potere della Nona, ed avendo recentemente vinto una guerra molto importante (l'anno è il 1945), nota che Shostakovich ha al momento scritto solamente 8 sinfonie. Essendosi Shostakovich tenuto nelle grazie del partito per qualche tempo, decide di commissionare la sua Nona sinfonia in onore della parata militare in piazza Rossa, a Mosca, che celebra la vittoria sovietica sul regime nazista.\

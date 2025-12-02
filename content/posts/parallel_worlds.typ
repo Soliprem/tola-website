@@ -1,7 +1,7 @@
 #import "../index.typ": *
 #show: template.with(
-  title: "",
-  date: ""
+  title: "Parallel Worlds",
+  date: "20/01/2025"
 )
 
 #let definition(name, body, fill: gray) = {

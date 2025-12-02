@@ -5,19 +5,17 @@
     }
 }
 
-/* Container and layout */
+/* --- Global Layout & Typography --- */
 body {
   @apply bg-gray-900 text-gray-100 leading-relaxed;
   font-family: 'Georgia', 'Times New Roman', serif;
 }
 
-/* Main content wrapper - Typst typically wraps content in a main or article */
 main, article {
   @apply max-w-3xl mx-auto px-6 py-12;
   position: relative;
 }
 
-/* Headings */
 h1 {
   @apply text-4xl md:text-5xl font-bold text-gray-50 mb-6 mt-8 leading-tight;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -33,273 +31,286 @@ h3 {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-h4 {
-  @apply text-xl md:text-2xl font-semibold text-gray-200 mb-2 mt-6;
-}
+h4 { @apply text-xl md:text-2xl font-semibold text-gray-200 mb-2 mt-6; }
+h5 { @apply text-lg md:text-xl font-semibold text-gray-200 mb-2 mt-4; }
+h6 { @apply text-base md:text-lg font-semibold text-gray-300 mb-2 mt-4; }
 
-h5 {
-  @apply text-lg md:text-xl font-semibold text-gray-200 mb-2 mt-4;
-}
+p { @apply mb-4 text-gray-300 text-lg leading-relaxed; }
 
-h6 {
-  @apply text-base md:text-lg font-semibold text-gray-300 mb-2 mt-4;
-}
-
-/* Paragraphs */
-p {
-  @apply mb-4 text-gray-300 text-lg leading-relaxed;
-}
-
-/* Links */
 a {
   @apply text-blue-400 hover:text-blue-300 underline decoration-blue-600 hover:decoration-blue-400 transition-colors duration-200;
 }
 
-/* Lists */
-ul {
-  @apply list-disc list-inside mb-4 space-y-2 text-gray-300 ml-4;
-}
+ul { @apply list-disc list-inside mb-4 space-y-2 text-gray-300 ml-4; }
+ol { @apply list-decimal list-inside mb-4 space-y-2 text-gray-300 ml-4; }
+li { @apply text-lg leading-relaxed; }
+li > ul, li > ol { @apply mt-2 ml-6; }
 
-ol {
-  @apply list-decimal list-inside mb-4 space-y-2 text-gray-300 ml-4;
-}
-
-li {
-  @apply text-lg leading-relaxed;
-}
-
-li > ul, li > ol {
-  @apply mt-2 ml-6;
-}
-
-/* Blockquotes */
 blockquote {
   @apply border-l-4 border-blue-500 pl-6 py-2 my-6 italic text-gray-400 bg-gray-800 rounded-r;
 }
 
-/* Code blocks */
+/* Code */
 pre {
   @apply bg-black text-gray-100 rounded-lg p-6 mb-4 overflow-x-auto text-sm leading-relaxed shadow-xl border border-gray-800;
 }
-
-code {
-  @apply bg-gray-800 text-emerald-400 px-2 py-1 rounded text-sm font-mono;
-}
-
-pre code {
-  @apply bg-transparent text-gray-100 p-0;
-}
+code { @apply bg-gray-800 text-emerald-400 px-2 py-1 rounded text-sm font-mono; }
+pre code { @apply bg-transparent text-gray-100 p-0; }
 
 /* Tables */
-table {
-  @apply w-full border-collapse mb-6 shadow-lg;
-}
+table { @apply w-full border-collapse mb-6 shadow-lg; }
+thead { @apply bg-gray-800 text-gray-100; }
+th { @apply px-4 py-3 text-left font-semibold border border-gray-700; }
+td { @apply px-4 py-3 border border-gray-700 text-gray-300; }
+tbody tr { @apply bg-gray-900 hover:bg-gray-800 transition-colors; }
+tbody tr:nth-child(even) { @apply bg-gray-800; }
 
-thead {
-  @apply bg-gray-800 text-gray-100;
-}
+hr { @apply my-8 border-t-2 border-gray-700; }
+img { @apply max-w-full h-auto rounded-lg shadow-xl my-6 border border-gray-800; }
+figure { @apply my-8; }
+figcaption { @apply text-center text-sm text-gray-400 mt-2 italic; }
 
-th {
-  @apply px-4 py-3 text-left font-semibold border border-gray-700;
-}
+strong { @apply font-bold text-gray-50; }
+em { @apply italic; }
+small { @apply text-sm text-gray-500; }
+dl { @apply mb-4; }
+dt { @apply font-semibold text-gray-100 mt-4; }
+dd { @apply ml-6 text-gray-300; }
 
-td {
-  @apply px-4 py-3 border border-gray-700 text-gray-300;
-}
+/* Selection & Scrollbar */
+::selection { @apply bg-blue-600 text-white; }
+::-webkit-scrollbar { @apply w-2; }
+::-webkit-scrollbar-track { @apply bg-gray-900; }
+::-webkit-scrollbar-thumb { @apply bg-gray-700 rounded-full hover:bg-gray-600; }
 
-tbody tr {
-  @apply bg-gray-900 hover:bg-gray-800 transition-colors;
-}
-
-tbody tr:nth-child(even) {
-  @apply bg-gray-800;
-}
-
-/* Horizontal rules */
-hr {
-  @apply my-8 border-t-2 border-gray-700;
-}
-
-/* Images */
-img {
-  @apply max-w-full h-auto rounded-lg shadow-xl my-6 border border-gray-800;
-}
-
-/* Figure captions (if Typst outputs them) */
-figure {
-  @apply my-8;
-}
-
-figcaption {
-  @apply text-center text-sm text-gray-400 mt-2 italic;
-}
-
-/* Footnotes styling */
-section[role="doc-endnotes"] {
-  @apply mt-12 pt-8 border-t-2 border-gray-700;
-}
-
-section[role="doc-endnotes"] ol {
-  @apply list-none ml-0 space-y-4;
-}
-
-section[role="doc-endnotes"] li[id^="loc-"] {
-  @apply text-sm text-gray-400 leading-snug;
-}
-
-sup a[role="doc-backlink"] {
-  @apply text-blue-400 no-underline font-normal;
-}
-
-/* On larger screens, push footnotes to the margin */
-@media (min-width: 1280px) {
-  body {
-    @apply overflow-x-visible;
-  }
-  
-  main, article {
-    @apply pr-72;
-    max-width: 48rem;
-  }
-  
-  section[role="doc-endnotes"] {
-    @apply border-t-0 mt-0 pt-0;
-  }
-  
-  section[role="doc-endnotes"] ol {
-    @apply space-y-0;
-  }
-  
-  section[role="doc-endnotes"] li[id^="loc-"] {
-    position: absolute;
-    right: -16rem;
-    width: 15rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-top: 0;
-    border-left: 2px solid theme('colors.gray.700');
-  }
-}
-
-/* Strong and emphasis */
-strong {
-  @apply font-bold text-gray-50;
-}
-
-em {
-  @apply italic;
-}
-
-/* Small text */
-small {
-  @apply text-sm text-gray-500;
-}
-
-/* Definition lists (if used) */
-dl {
-  @apply mb-4;
-}
-
-dt {
-  @apply font-semibold text-gray-100 mt-4;
-}
-
-dd {
-  @apply ml-6 text-gray-300;
-}
-
-/* Header/navigation area */
+/* --- Site Header & Footer --- */
 header {
   @apply bg-gray-950 border-b border-gray-800 shadow-lg sticky top-0 z-50;
 }
-
 header nav {
   @apply max-w-3xl mx-auto px-6 py-4 flex justify-between items-center;
 }
-
 header a {
   @apply no-underline text-gray-300 hover:text-gray-100 font-medium;
 }
-
-/* Footer */
 footer {
   @apply bg-gray-950 border-t border-gray-800 mt-16 py-8 text-center text-gray-400 text-sm;
 }
 
-/* Selection color */
-::selection {
-  @apply bg-blue-600 text-white;
+/* --- Terminal Navbar --- */
+.terminal-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding: 2rem 0 0.5rem 0;
+  margin-bottom: 3rem;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.9rem;
 }
 
-/* Scrollbar styling (webkit browsers) */
-::-webkit-scrollbar {
-  @apply w-2;
+.terminal-prompt {
+  color: theme('colors.gray.600');
+  font-weight: normal;
+  user-select: none;
 }
 
-::-webkit-scrollbar-track {
-  @apply bg-gray-900;
+.terminal-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
 }
 
-::-webkit-scrollbar-thumb {
-  @apply bg-gray-700 rounded-full hover:bg-gray-600;
-}
-
-/* Responsive font scaling */
-@media (max-width: 640px) {
-  body {
-    @apply text-base;
-  }
-  
-  p, li {
-    @apply text-base;
-  }
-}
-
-/* Sidenotes Styling */
-.sidenote-wrapper {
-  /* Keeps the anchor in flow */
+.terminal-nav a {
+  color: theme('colors.gray.400');
+  text-decoration: none;
   position: relative;
+  transition: color 0.2s;
 }
 
-.sidenote-content {
-  /* Mobile / Default: Display as interlinear blocks */
-  display: block;
-  margin: 1rem 0;
-  padding: 0.75rem;
-  background-color: theme('colors.gray.800');
-  border-left: 3px solid theme('colors.blue.500');
-  color: theme('colors.gray.300');
-  font-size: 0.875rem;
-  line-height: 1.4;
-  
-  /* Ensure it wraps correctly inside paragraphs */
-  box-decoration-break: clone; 
-  -webkit-box-decoration-break: clone;
-}
+.terminal-nav a:hover { color: theme('colors.green.400'); }
 
-.sidenote-content sup {
-  margin-right: 0.5em;
-  color: theme('colors.blue.400');
+/* Cursor Effect */
+.terminal-nav a:hover::before {
+  content: ""; 
+  color: theme('colors.green.500');
+  position: absolute;
+  left: -0.8em;
   font-weight: bold;
 }
 
-/* Desktop: Push to the side margin */
+.fn-toggle-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  color: theme('colors.blue.500');
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.fn-toggle-btn:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* --- Sidenotes / Footnotes System --- */
+.sidenote-wrapper {
+  position: relative;
+  color: theme('colors.blue.400');
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: dotted; 
+}
+
+/* Mobile Default (Tooltip) */
+.sidenote-content {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, visibility 0.2s;
+
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  
+  width: max-content;
+  max-width: 18rem;
+  padding: 0.75rem;
+  background-color: theme('colors.gray.800');
+  color: theme('colors.gray.100');
+  border: 1px solid theme('colors.gray.700');
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  
+  font-size: 0.875rem;
+  line-height: 1.4;
+  text-align: left;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.sidenote-content::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: theme('colors.gray.800') transparent transparent transparent;
+}
+
+.sidenote-wrapper:hover .sidenote-content,
+.sidenote-wrapper:focus .sidenote-content {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Mobile Toggled (Inline Block) */
+body.inline-notes .sidenote-wrapper { text-decoration: none; }
+
+body.inline-notes .sidenote-content {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  
+  position: static;
+  transform: none;
+  
+  display: block;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  
+  background-color: theme('colors.gray.800');
+  border-left: 3px solid theme('colors.blue.500');
+  border-radius: 0 0.25rem 0.25rem 0;
+  border-width: 0 0 0 3px;
+  box-shadow: none;
+  
+  width: 100%;
+  max-width: none;
+}
+
+body.inline-notes .sidenote-content::after { display: none; }
+
+
+/* --- MEDIA QUERIES --- */
+
+/* Mobile (< 640px) */
+@media (max-width: 640px) {
+  body, p, li { @apply text-base; }
+  
+  /* Navbar Stacking */
+  .terminal-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+  
+  .terminal-links {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1rem;
+    gap: 0.75rem;
+    border-left: 1px solid theme('colors.gray.800');
+  }
+
+  .terminal-nav a:hover::before { display: none; }
+}
+
+/* Desktop (> 1280px) */
 @media (min-width: 1280px) {
-  .sidenote-content {
-    /* Float right aligns the top of the element with the line of text it's on */
+  /* Layout Expansion */
+  body { @apply overflow-x-visible; }
+  main, article { @apply pr-72; max-width: 48rem; }
+  
+  /* Hide Mobile Toggle */
+  .fn-toggle-btn { display: none !important; }
+
+  /* Sidenote Logic (Desktop Overrides) */
+  .sidenote-wrapper {
+    cursor: auto;
+    text-decoration: none;
+    color: inherit;
+  }
+  .sidenote-wrapper sup {
+    color: theme('colors.blue.400');
+    font-weight: bold;
+  }
+
+  .sidenote-content, 
+  body.inline-notes .sidenote-content {
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto;
+    
+    position: static;
+    transform: none;
+    display: block;
+    
     float: right;
-    clear: right; /* Prevents notes from overlapping each other */
-    
+    clear: right;
     width: 15rem;
-    margin-right: -17rem; /* Pushes the note into the padding area */
-    
-    /* Reset mobile styles */
+    margin-right: -17rem;
     margin-top: 0;
     margin-bottom: 0.5rem;
+    
     background-color: transparent;
     border: none;
+    box-shadow: none;
     padding: 0;
-    font-size: 0.8rem;
+    
     color: theme('colors.gray.400');
+    font-size: 0.8rem;
+    text-align: left;
   }
+
+  .sidenote-content::after { display: none; }
 }
