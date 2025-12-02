@@ -1,0 +1,46 @@
+/* --- Catppuccin Mocha (Dark Default) --- */
+:root {
+  --bg-body: #1e1e2e;
+  --bg-header: #181825;
+  --bg-surface: #313244;
+  --bg-code: #11111b;
+  --text-main: #cdd6f4;
+  --text-head: #f5c2e7;
+  --text-body: #bac2de;
+  --text-muted: #6c7086;
+  --text-faint: #45475a;
+  --border-main: #313244;
+  --border-light: #45475a;
+  --accent-primary: #89b4fa;
+  --accent-hover: #b4befe;
+  --accent-decoration: #cba6f7;
+  --accent-success: #a6e3a1;
+  --accent-cursor: #f5e0dc;
+  --accent-code: #94e2d5;
+  --font-serif: 'Georgia', 'Times New Roman', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* --- Catppuccin Latte (Light Override) --- */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-body: #eff1f5;       /* base */
+    --bg-header: #e6e9ef;     /* mantle */
+    --bg-surface: #ccd0da;    /* surface0 */
+    --bg-code: #dce0e8;       /* crust */
+    --text-main: #4c4f69;     /* text */
+    --text-head: #8839ef;     /* mauve (headers) */
+    --text-body: #5c5f77;     /* subtext1 */
+    --text-muted: #9ca0b0;    /* overlay0 */
+    --text-faint: #acb0be;    /* surface2 */
+    --border-main: #bcc0cc;   /* surface1 */
+    --border-light: #ccd0da;  /* surface0 */
+    --accent-primary: #1e66f5;    /* blue */
+    --accent-hover: #7287fd;      /* lavender */
+    --accent-decoration: #8839ef; /* mauve */
+    --accent-success: #40a02b;    /* green */
+    --accent-cursor: #dc8a78;     /* rosewater */
+    --accent-code: #179299;       /* teal */
+  }
+}

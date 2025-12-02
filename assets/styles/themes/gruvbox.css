@@ -1,0 +1,45 @@
+/* --- Gruvbox Dark (Default) --- */
+:root {
+  --bg-body: #282828;
+  --bg-header: #1d2021;
+  --bg-surface: #3c3836;
+  --bg-code: #1d2021;
+  --text-main: #ebdbb2;
+  --text-head: #fb4934;
+  --text-body: #fbf1c7;
+  --text-muted: #928374;
+  --text-faint: #7c6f64;
+  --border-main: #504945;
+  --border-light: #665c54;
+  --accent-primary: #fabd2f;
+  --accent-hover: #fe8019;
+  --accent-decoration: #d3869b;
+  --accent-success: #b8bb26;
+  --accent-cursor: #fe8019;
+  --accent-code: #8ec07c;
+  --font-serif: 'Georgia', 'Times New Roman', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* --- Gruvbox Light Override --- */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-body: #fbf1c7;       /* light0 */
+    --bg-header: #f9f5d7;     /* light0_hard */
+    --bg-surface: #ebdbb2;    /* light1 */
+    --bg-code: #f2e5bc;       /* light2 */
+    --text-main: #3c3836;     /* dark0 */
+    --text-head: #9d0006;     /* red-dark */
+    --text-body: #504945;     /* dark2 */
+    --text-muted: #7c6f64;    /* gray */
+    --text-faint: #928374;    /* dark4 */
+    --border-main: #d5c4a1;   /* light4 */
+    --border-light: #ebdbb2;  /* light1 */
+    --accent-primary: #b57614;    /* yellow-dark */
+    --accent-hover: #af3a03;      /* orange-dark */
+    --accent-decoration: #8f3f71; /* purple-dark */
+    --accent-success: #79740e;    /* green-dark */
+    --accent-code: #427b58;       /* aqua-dark */
+  }
+}

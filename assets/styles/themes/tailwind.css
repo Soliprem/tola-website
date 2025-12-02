@@ -1,0 +1,98 @@
+/* --- Default Tailwind Dark (Original) --- */
+:root {
+  /* Backgrounds */
+  --bg-body: #111827;
+  /* gray-900 */
+  --bg-header: #030712;
+  /* gray-950 */
+  --bg-surface: #1f2937;
+  /* gray-800 */
+  --bg-code: #000000;
+  /* black */
+
+  /* Text */
+  --text-main: #f3f4f6;
+  /* gray-100 */
+  --text-head: #f9fafb;
+  /* gray-50 */
+  --text-body: #d1d5db;
+  /* gray-300 */
+  --text-muted: #9ca3af;
+  /* gray-400 */
+  --text-faint: #4b5563;
+  /* gray-600 */
+
+  /* Borders */
+  --border-main: #1f2937;
+  /* gray-800 */
+  --border-light: #374151;
+  /* gray-700 */
+
+  /* Accents */
+  --accent-primary: #60a5fa;
+  /* blue-400 */
+  --accent-hover: #93c5fd;
+  /* blue-300 */
+  --accent-decoration: #2563eb;
+  /* blue-600 */
+
+  --accent-success: #4ade80;
+  /* green-400 */
+  --accent-cursor: #22c55e;
+  /* green-500 */
+  --accent-code: #34d399;
+  /* emerald-400 */
+
+  /* Fonts */
+  --font-serif: 'Georgia', 'Times New Roman', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* --- Tailwind Light Override --- */
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Backgrounds: Inverted to light grays/white */
+    --bg-body: #f9fafb;
+    /* gray-50 */
+    --bg-header: #ffffff;
+    /* white */
+    --bg-surface: #ffffff;
+    /* white */
+    --bg-code: #f3f4f6;
+    /* gray-100 */
+
+    /* Text: Inverted to dark grays */
+    --text-main: #111827;
+    /* gray-900 */
+    --text-head: #030712;
+    /* gray-950 */
+    --text-body: #374151;
+    /* gray-700 */
+    --text-muted: #6b7280;
+    /* gray-500 */
+    --text-faint: #9ca3af;
+    /* gray-400 */
+
+    /* Borders */
+    --border-main: #e5e7eb;
+    /* gray-200 */
+    --border-light: #d1d5db;
+    /* gray-300 */
+
+    /* Accents: Shifted darker for visibility on light backgrounds */
+    --accent-primary: #2563eb;
+    /* blue-600 */
+    --accent-hover: #3b82f6;
+    /* blue-500 */
+    --accent-decoration: #93c5fd;
+    /* blue-300 */
+
+    --accent-success: #16a34a;
+    /* green-600 */
+    --accent-cursor: #16a34a;
+    /* green-600 */
+    --accent-code: #059669;
+    /* emerald-600 */
+  }
+}
