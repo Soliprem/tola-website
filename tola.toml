@@ -18,7 +18,7 @@ minify = true
 
 [build.rss]
 enable = true
-path = "posts/index.xml"
+path = "feed.xml"
 
 [build.sitemap]
 enable = false
@@ -44,7 +44,7 @@ input = "./assets/styles/style.css"
 [build.head]
 styles = []
 scripts = []
-elements = []
+elements = ['<link rel="alternate" type="application/rss+xml" href="/feed.xml">']
 
 [serve]
 interface = "127.0.0.1"
