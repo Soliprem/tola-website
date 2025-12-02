@@ -254,3 +254,52 @@ footer {
     @apply text-base;
   }
 }
+
+/* Sidenotes Styling */
+.sidenote-wrapper {
+  /* Keeps the anchor in flow */
+  position: relative;
+}
+
+.sidenote-content {
+  /* Mobile / Default: Display as interlinear blocks */
+  display: block;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  background-color: theme('colors.gray.800');
+  border-left: 3px solid theme('colors.blue.500');
+  color: theme('colors.gray.300');
+  font-size: 0.875rem;
+  line-height: 1.4;
+  
+  /* Ensure it wraps correctly inside paragraphs */
+  box-decoration-break: clone; 
+  -webkit-box-decoration-break: clone;
+}
+
+.sidenote-content sup {
+  margin-right: 0.5em;
+  color: theme('colors.blue.400');
+  font-weight: bold;
+}
+
+/* Desktop: Push to the side margin */
+@media (min-width: 1280px) {
+  .sidenote-content {
+    /* Float right aligns the top of the element with the line of text it's on */
+    float: right;
+    clear: right; /* Prevents notes from overlapping each other */
+    
+    width: 15rem;
+    margin-right: -17rem; /* Pushes the note into the padding area */
+    
+    /* Reset mobile styles */
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-size: 0.8rem;
+    color: theme('colors.gray.400');
+  }
+}

@@ -19,6 +19,19 @@
   show math.equation.where(block: true): it => if not inside-figure.get() {
     html.elem("figure", attrs: (class: "w-fit mx-auto", role: "math"), html.frame(it))
   } else {it}
+
+  // Sidenote handling: convert footnotes to inline spans
+  show footnote: it => {
+    let note = it.body
+    // Render the anchor number and the content immediately after it
+    html.elem("span", attrs: (class: "sidenote-wrapper"), [
+      #super(context counter(footnote).display())
+      #html.elem("span", attrs: (class: "sidenote-content"), [
+        #super(context counter(footnote).display()) 
+        #note
+      ])
+    ])
+  }
   
   // Add semantic HTML wrapper
   html.elem(
