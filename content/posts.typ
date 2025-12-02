@@ -5,7 +5,7 @@
 
 == 2025
 
-- #link("./posts/aerei/")[Aerei]
+- #link("./posts/aerei/")[Oltre la Curva a S: Un Approccio di Network alla Transizione Sostenibile della Mobilità Aerea]
 - #link("./posts/land-of-echoes")[The Land of Echoes]
 - #link("./posts/parallel_worlds/")[Parallel Worlds]
 

@@ -20,7 +20,7 @@
         default = pkgs.mkShell {
           buildInputs = with pkgs; [
             nushell
-            tola.packages.${pkgs.system}.default
+            tola.packages.${pkgs.stdenv.hostPlatform.system}.default
             tailwindcss
           ];
           shellHook = ''
