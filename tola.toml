@@ -1,5 +1,6 @@
 [base]
 title = "Soliprem"
+url = "https://soliprem.eu"
 author = "Francesco Prem Solidoro"
 email = "me@soliprem.eu"
 description = ""
@@ -16,7 +17,7 @@ utils = "utils"
 minify = true
 
 [build.rss]
-enable = false
+enable = true
 path = "posts/index.xml"
 
 [build.sitemap]

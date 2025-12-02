@@ -1,8 +1,16 @@
 #let template(
   title: "", 
   date: none, 
+  summary: none,
   body
 ) = {
+
+  [#metadata((
+      title: title,
+      date: date,
+      summary: summary,
+    )) <tola-meta>]
+
   let inside-figure = state("inside-figure", false)
   
   show figure: it => {

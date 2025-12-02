@@ -1,7 +1,7 @@
 #import "../index.typ": *
 #show: template.with(
   title: "Why",
-  date: "27/03/2024"
+  date: "2024-03-27"
 )
 
 = Why make a random website?

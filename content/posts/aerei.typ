@@ -1,7 +1,7 @@
 #import "../index.typ": *
 #show: template.with(
   title: "Mobilità Aerea Sostenibile",
-  date: "2025/11/20"
+  date: "2025-11-20"
 )
 
 #set text(lang: "it")

@@ -1,7 +1,7 @@
 #import "../index.typ": *
 #show: template.with(
   title: "An analysis of the correlation between gun regulation and public safety in the USA",
-  date: "02/04/2024"
+  date: "2024-04-02"
 )
 #outline()
 = Introduction

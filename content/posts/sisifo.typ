@@ -1,7 +1,7 @@
 #import "../index.typ": *
 #show: template.with(
   title: "La figura di Shostakovich come un Sisifo moderno",
-  date: "18/04/2024"
+  date: "2024-04-18"
 )
 
 = La figura di Shostakovich come un Sisifo moderno

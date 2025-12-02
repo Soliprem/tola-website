@@ -1,7 +1,7 @@
 #import "../index.typ": *
 #show: template.with(
   title: "New Approaches to Social Sciences",
-  date: "27/06/2024"
+  date: "2024-06-27"
 )
 
 = A new interdisciplinary approach to the study of social sciences | Introduction

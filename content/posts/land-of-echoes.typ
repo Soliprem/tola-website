@@ -1,7 +1,7 @@
 #import "../index.typ": *
 #show: template.with(
   title: "The Land of Echoes",
-  date: "31/03/2025"
+  date: "2025-03-31"
 )
 //
 // Frontmatter representation
