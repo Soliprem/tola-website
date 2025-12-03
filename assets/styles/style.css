@@ -317,6 +317,13 @@ dd {
   background-color: var(--bg-body);
 }
 
+.terminal-nav p {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+  display: inline;
+}
+
 /* --- Desktop Layout (Default) --- */
 
 /* Use display: contents to let the prompt participate in the flex grid 
@@ -386,7 +393,7 @@ dd {
   .terminal-nav {
     flex-direction: column;
     align-items: stretch;
-    gap: 0; 
+    gap: 0;
     margin-bottom: 2rem;
   }
 
@@ -413,7 +420,7 @@ dd {
 
   /* Hide links by default */
   .terminal-links {
-    display: none; 
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 1rem;
@@ -423,13 +430,13 @@ dd {
   }
 
   /* Logic: When checkbox is checked, show links */
-  .nav-toggle-input:checked ~ .terminal-links {
+  .nav-toggle-input:checked~.terminal-links {
     display: flex;
   }
 
   /* Change label text content purely via CSS if desired, 
      or just keep it simple with the HTML text */
-  .nav-toggle-input:checked ~ .nav-header .nav-toggle-label {
+  .nav-toggle-input:checked~.nav-header .nav-toggle-label {
     color: var(--text-main);
   }
 
