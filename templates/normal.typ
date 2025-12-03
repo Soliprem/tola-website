@@ -50,9 +50,18 @@
     [
       #html.elem("script", "function toggleFn() { document.body.classList.toggle('inline-notes'); }")
 
-      // [UPDATED] Navbar with integrated Toggle
+        // [UPDATED] Navbar with CSS-only Toggle (Checkbox Hack)
       #html.elem("nav", attrs: (class: "terminal-nav"), [
-        #html.elem("span", attrs: (class: "terminal-prompt"), "guest@soliprem.eu: $")
+        // 1. Header containing Prompt + Mobile Toggle Button
+        #html.elem("div", attrs: (class: "nav-header"), [
+            #html.elem("span", attrs: (class: "terminal-prompt"), "guest@soliprem.eu: $")
+            #html.elem("label", attrs: ("for": "nav-toggle", class: "nav-toggle-label"), "[menu]")
+        ])
+
+        // 2. Hidden Checkbox (Controls state)
+        #html.elem("input", attrs: (type: "checkbox", id: "nav-toggle", class: "nav-toggle-input"))
+
+        // 3. Links Container
         #html.elem("div", attrs: (class: "terminal-links"), [
             #html.elem("a", attrs: (href: "/"), "~/")
             #html.elem("a", attrs: (href: "/posts/"), "~/posts")
