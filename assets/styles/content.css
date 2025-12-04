@@ -1,0 +1,104 @@
+/* ==========================================================================
+   4. CONTENT BLOCKS (Images, Tables, Code)
+   ========================================================================== */
+
+/* Blockquotes */
+blockquote {
+  @apply pl-6 py-2 my-6 italic rounded-r;
+  border-left: 4px solid var(--accent-primary);
+  /* blue-500 */
+  background-color: var(--bg-surface);
+  color: var(--text-muted);
+}
+
+/* Code Blocks */
+pre {
+  @apply rounded-lg p-6 mb-4 overflow-x-auto text-sm leading-relaxed shadow-xl;
+  background-color: var(--bg-code);
+  color: var(--text-main);
+  border: 1px solid var(--border-main);
+}
+
+/* Inline Code */
+code {
+  @apply px-2 py-1 rounded text-sm;
+  background-color: var(--bg-surface);
+  color: var(--accent-code);
+  font-family: var(--font-mono);
+}
+
+pre code {
+  background-color: transparent;
+  color: var(--text-main);
+  padding: 0;
+}
+
+/* Tables */
+table {
+  @apply w-full border-collapse mb-6 shadow-lg;
+}
+
+thead {
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+}
+
+th {
+  @apply px-4 py-3 text-left font-semibold;
+  border: 1px solid var(--border-light);
+}
+
+td {
+  @apply px-4 py-3;
+  border: 1px solid var(--border-light);
+  color: var(--text-body);
+}
+
+tbody tr {
+  @apply transition-colors;
+  background-color: var(--bg-body);
+}
+
+tbody tr:hover {
+  background-color: var(--bg-surface);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--bg-surface);
+}
+
+/* Images & Figures */
+img {
+  @apply max-w-full h-auto rounded-lg shadow-xl my-6;
+  border: 1px solid var(--border-main);
+}
+
+figure {
+  @apply my-8;
+}
+
+figcaption {
+  @apply text-center text-sm italic mt-2;
+  color: var(--text-muted);
+}
+
+hr {
+  @apply my-8;
+  border-top: 2px solid var(--border-light);
+}
+
+dl {
+  @apply mb-4;
+}
+
+dt {
+  @apply font-semibold mt-4;
+  color: var(--text-main);
+}
+
+dd {
+  @apply ml-6;
+  color: var(--text-body);
+}
+
+

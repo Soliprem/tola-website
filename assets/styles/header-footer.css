@@ -1,0 +1,33 @@
+/* ==========================================================================
+   3. SITE HEADER & FOOTER
+   ========================================================================== */
+
+header {
+  @apply shadow-lg top-0 z-50 rounded-b-md;
+  background-color: var(--bg-header);
+  border-bottom: 1px solid var(--border-main);
+  padding: 1em;
+}
+
+header nav {
+  @apply max-w-3xl mx-auto px-6 py-4 flex justify-between items-center;
+}
+
+header a {
+  @apply no-underline font-medium;
+  color: var(--text-body);
+}
+
+header a:hover {
+  color: var(--text-main);
+}
+
+footer {
+  @apply mt-16 py-8 text-center text-sm;
+  background-color: var(--bg-header);
+  border-top: 1px solid var(--border-main);
+  color: var(--text-muted);
+}
+
+
+

@@ -1,0 +1,148 @@
+/* ==========================================================================
+   6. COMPONENT: SIDENOTES / FOOTNOTES
+   ========================================================================== */
+
+.sidenote-wrapper {
+  position: relative;
+  color: var(--accent-primary);
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+/* --- State 1: Default Mobile (Tooltip) --- */
+.sidenote-content {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, visibility 0.2s;
+
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+
+  width: max-content;
+  max-width: 18rem;
+  padding: 0.75rem;
+
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  border: 1px solid var(--border-light);
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+
+  font-size: 0.875rem;
+  line-height: 1.4;
+  text-align: left;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+/* Tooltip Arrow */
+.sidenote-content::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: var(--bg-surface) transparent transparent transparent;
+}
+
+/* Show Tooltip */
+.sidenote-wrapper:hover .sidenote-content,
+.sidenote-wrapper:focus .sidenote-content {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* --- State 2: Mobile Toggled (Inline Block) --- */
+body.inline-notes .sidenote-wrapper {
+  text-decoration: none;
+}
+
+body.inline-notes .sidenote-content {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+
+  position: static;
+  transform: none;
+  display: block;
+
+  margin: 1rem 0;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: none;
+
+  background-color: var(--bg-surface);
+  border: none;
+  border-left: 3px solid var(--accent-primary);
+  /* blue-500 */
+  border-radius: 0 0.25rem 0.25rem 0;
+  box-shadow: none;
+}
+
+body.inline-notes .sidenote-content::after {
+  display: none;
+}
+
+
+/* --- State 3: Desktop Sidenotes (Overrides Mobile) --- */
+@media (min-width: 1280px) {
+
+  /* Hide Mobile Toggle Button */
+  .fn-toggle-btn {
+    display: none !important;
+  }
+
+  /* Reset Wrapper */
+  .sidenote-wrapper {
+    cursor: auto;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .sidenote-wrapper sup {
+    color: var(--accent-primary);
+    font-weight: bold;
+  }
+
+  /* Force Sidenote Style */
+  .sidenote-content,
+  body.inline-notes .sidenote-content {
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto;
+
+    position: static;
+    transform: none;
+    display: block;
+
+    float: right;
+    clear: right;
+    width: 15rem;
+    margin-right: -17rem;
+    /* Pushes into the right padding defined in Main */
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    text-align: left;
+  }
+
+  .sidenote-content::after {
+    display: none;
+  }
+}
+
