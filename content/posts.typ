@@ -11,6 +11,7 @@
 
 == 2024
 
+- #link("./posts/sisifo")[La figura di Shostakovich come un Sisifo moderno]
 - #link("./posts/new_approach_socsci")[New Approaches to Social Sciences]
 - #link("./posts/gun_deaths_paper/")[An analysis of the correlation between gun regulation and public safety in the USA]
 - #link("./posts/why")[Why]

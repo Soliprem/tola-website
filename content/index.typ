@@ -27,10 +27,17 @@ Welcome to my corner of the web. I'm a student, hobby dev, and enthusiast of all
 - *Server infrastructure* — Rewriting my homelab configuration with NixOS
 - *#link("https://github.com/notashelf/nvf")[NVF]* — Cool stuff, also happens to be ralf-ware
 
-== Webrings
+== More fun parts of the Web!
 
 #link("https://nixwebr.ing")[*Nix Webring*] — 
 #link("https://nixwebr.ing/prev/soliprem")[← previous] · 
 #link("https://nixwebr.ing/rand")[random] · 
 #link("https://nixwebr.ing/next/soliprem")[next →]
 
+#html.elem("script", attrs: (src: "https://astroring.auroradynia.com/ring.js"))
+
+#html.elem("div", attrs: (id: "wcb", class: "carbonbadge wcb-d"))
+#html.elem("script", attrs: (
+  src: "https://unpkg.com/website-carbon-badges@1.1.3/b.min.js",
+  defer: "defer"
+))
