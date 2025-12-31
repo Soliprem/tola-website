@@ -1,5 +1,5 @@
 #import "index.typ": *
-#show: template(
+#show: template.with(
   title: "Contacs"
 )
 

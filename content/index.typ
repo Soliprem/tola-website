@@ -2,9 +2,8 @@
 #import "@preview/sicons:15.13.0": *
 
 #show: template.with(
+  title: "Soliprem"
 )
-
-= Soliprem
 
 #figure(
   image("./imgs/profile.png"),
@@ -19,15 +18,15 @@
 
 Welcome to my corner of the web. I'm a student, hobby dev, and enthusiast of all things complex, networks, and open-source.
 
-== What I'm Up To
+= What I'm Up To
 
-=== Current Projects
+== Current Projects
 
 - *This website* — Rebuilding it from scratch using Typst for content generation
 - *Server infrastructure* — Rewriting my server to be configured with nix
 - *#link("https://github.com/notashelf/nvf")[NVF]* — Cool stuff, also happens to be raf-ware
 
-== More fun parts of the Web!
+= More fun parts of the Web!
 
 #link("https://nixwebr.ing")[*Nix Webring*] — 
 #link("https://nixwebr.ing/prev/soliprem")[← previous] · 
