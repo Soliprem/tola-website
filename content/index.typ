@@ -24,7 +24,7 @@ Welcome to my corner of the web. I'm a student, hobby dev, and enthusiast of all
 === Current Projects
 
 - *This website* — Rebuilding it from scratch using Typst for content generation
-- *Server infrastructure* — Rewriting my homelab configuration with NixOS
+- *Server infrastructure* — Rewriting my server to be configured with nix
 - *#link("https://github.com/notashelf/nvf")[NVF]* — Cool stuff, also happens to be raf-ware
 
 == More fun parts of the Web!
