@@ -20,9 +20,9 @@ The Land of Echoes is a world that's big enough to allow players to create
 pockets of their own design without breaking the wider world, but thematic
 enough for a GM to invent components on-the-fly.
 
-== The World
+= The World
 
-=== Geography
+== Geography
 
 Before the _Sforzo_, the world was divided into five main regions, roughly
 oriented on the cardinal axes, with one being in the middle.
@@ -35,19 +35,19 @@ oriented on the cardinal axes, with one being in the middle.
 - Center: A massive sea with an archipelago of islands bound by the Gestalt, a
   peaceful empire.
 
-=== Society
+== Society
 
 While the behavior of eccentric and powerful beings is mostly character driven,
 most people behave as their environment allows them to.
 
-==== Gestalt
+=== Gestalt
 
 In the heart of the Gestalt, technology derived from the arcane studies of the
 supernatural allows people to lead relatively comfortable lives. They might have
 day jobs and stable incomes. Corporate structures may also emerge, especially in
 larger cities. Are they always kept in check, however?
 
-==== East
+=== East
 
 In the east, instability leads to more insular communities linked by
 ever-changing commercial routes: you can't rely on help coming from the Kingdom,
@@ -55,7 +55,7 @@ but you can expect their tax collectors to come by, regardless of who it is that
 controls your town's territory, for now. People may work the land, trade, or be
 drafted into a local army, often unwillingly.
 
-==== North
+=== North
 
 In the north, it's geography that insulates communities from the outside world.
 Unlike the East, this isolation manifests itself in the lack of trade rather
@@ -64,7 +64,7 @@ stronger sense of broader community within villages, valleys and monasteries.
 People lead generally tough lives, but in a much less gruelling fashion than
 those living in the East.
 
-==== West
+=== West
 
 In the West, what little civilisation is present is geared towards commerce:
 people hold caravan points around oases or lead caravans through the scorching
@@ -72,7 +72,7 @@ heat of the desert. Some people try to make self-sufficient settlements with
 varying degrees of success. The conditions make forming bases for gangs hard,
 but make their attacks on caravans and settlements all the more deadly.
 
-==== South
+=== South
 
 In the south, the sprawling forest stumps the growth of large cities far from
 bodies of water. There's a thriving network of commerce in the larger cities,
@@ -161,7 +161,7 @@ alignment of the power of many supernatural entities. Particularly powerful
 entities may hold control over some of these domains, becoming de facto "main"
 deities.
 
-==== Nature
+=== Nature
 
 One of the most influential domains is the domain of Nature. It's present in the
 daily life of most inhabitants of the continent and is largely venerated in the
@@ -176,7 +176,7 @@ be a rebellion from Nature itself. This notion is especially common in the
 South, where the struggle of fires and storms makes the manifestation of
 Nature's suffering an all-to-imminent threat to the populace.
 
-==== Magic
+=== Magic
 
 Magic counts amongst its followers the worshippers of Nethys, along those who
 don't believe him to be the source of all magic, but just a very gifted wizard.
@@ -185,7 +185,7 @@ distinction between the two groups of scholars isn't in their respect for
 Nethys's power, but in the reverence the latter group holds for the weave of
 magic itself. This practice is especially common in the Gestalt's core.
 
-==== The _Sforzo_
+=== The _Sforzo_
 
 The _Sforzo_ is the great mystery of the Land of Echoes, and it's for the GM to
 flesh out in particular. Here's two options I personally find to be very
@@ -214,11 +214,11 @@ I've made it in these examples, or it can be more subtle. For example:
   merchants seemingly dying at young ages for "natural causes". Is it just the
   stress of a hard job, or is there something more to it?
 
-=== Cults
+== Cults
 
 There's many cults within the world. Here's some examples.
 
-==== Cult of the Elves
+=== Cult of the Elves
 
 The followers of the cult of Elves believe that the Elder races' longevity makes
 them innately better rulers, and long for the return of the long fallen massive
@@ -230,7 +230,7 @@ This is common in areas closest to mighty-looking elven ruins.
   Only millenary wisdom can be granted to be at the helm of our world
 ]
 
-==== Cult of Sacrifice
+=== Cult of Sacrifice
 
 The members of the Cult of Sacrifice believe that the only road towards
 enlightenment is Sacrifice. This may come in the form of sacrificing others,
@@ -241,7 +241,7 @@ This is most common in poor communities, where people might seek meaning in the
 suffering they already feel. Members might join after losing a loved one, for
 example, trying to assign a meaning of sacrifice to the loss.
 
-== Languages
+= Languages
 
 Each region has its native language, even though most people speak Common. Each
 region's common differs slightly depending on their native language. Common is a
@@ -259,7 +259,7 @@ I like using far-away languages, as it gives a sense of scale to the world, and
 it allows for interesting linguistic puzzles as you might have to translate
 ancient texts found in different regions.
 
-== Notes
+= Notes
 
 This is obviously not a finished world or setting. This is the basic structure
 I'm building on, and I'll keep posting addenda as I keep going. Hopefully

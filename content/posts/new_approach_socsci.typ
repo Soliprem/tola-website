@@ -4,9 +4,8 @@
   date: "2024-06-27"
 )
 
-= A new interdisciplinary approach to the study of social sciences | Introduction
 #outline()
-== Hard, Social, Sciences
+= Hard, Social, Sciences
 
 In the study of phenomena it's common to look for reductionist perspectives. In
 the context of social sciences, such vectors of analysis were especially loved
@@ -29,7 +28,7 @@ instances of experiments, and because people are different both from each other
 and from themselves (across time), we can't properly replicate _the same_
 experiment more than once without incurring in some degree of inaccuracy
 
-== Positivist Approach
+= Positivist Approach
 
 Obviously correct sampling techniques can minimise systemic biases, and so we
 can assume that for large enough sample sizes we will obtain results we can
@@ -39,7 +38,7 @@ with the casual relationship we are trying to study in the first place. We can
 observe statistically significant correlations and try to guess the relationship
 between the variables the change of which we observed, but little more.
 
-== Interpretative Approach
+= Interpretative Approach
 
 On the other side of the spectrum, we see the interpretative paradigm of
 sociology. A more personal branch of study based on the concepts of Verstehen
@@ -49,7 +48,7 @@ sociology often faces of the risk of trying to make a needle fit into it; of
 course, it passes without a hitch, but there's very little potential for
 inference to be made out of it.
 
-== Current-day Practice
+= Current-day Practice
 
 While the interpretative approach is far more accurate in describing the exact
 phenomenon it's studying (it's _internal validity_ is very high), the positivist
@@ -71,7 +70,7 @@ trials (RCTs) started to show their effectiveness. In this case, the influx may
 science, such as medicine (which, while it isn't physics, is certainly
 considered more rigorous than the social sciences).
 
-== The Value of Heuristics
+= The Value of Heuristics
 
 While "heuristics" is often negatively charged, especially in scientific fields,
 I personally find it undeniable that it's ubiquitous in any field that isn't
@@ -126,7 +125,7 @@ as _some_ aspects of Ayurvedic medicine can and are incorporated into western
 medicine through careful analysis, the same could potentially be done with our
 heuristic systems in the Social Sciences.
 
-== Solutions
+= Solutions
 
 This is where we run into the issue I presented at the beginning: it's much,
 much harder to conduct rigorous experimentation in the Social Sciences due to

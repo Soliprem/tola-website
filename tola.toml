@@ -8,12 +8,14 @@ language = "en"
 copyright = ""
 
 [build]
-path_prefix = ""
 content = "content"
 output = "public"
 assets = "assets"
-templates = "templates"
-utils = "utils"
+deps = [
+    "templates",
+    "utils",
+]
+data = "_data"
 minify = true
 
 [build.rss]
@@ -36,7 +38,10 @@ extract_type = "embedded"
 inline_max_size = "20KB"
 dpi = 96.0
 
-[build.tailwind]
+[build.css]
+auto_enhance = true
+
+[build.css.tailwind]
 enable = true
 command = ["tailwindcss"]
 input = "./assets/styles/style.css"

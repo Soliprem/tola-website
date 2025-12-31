@@ -1,7 +1,7 @@
 #import "index.typ": *
-#show: template
-
-== Contact
+#show: template(
+  title: "Contacs"
+)
 
 Reach out through any of these channels:
 

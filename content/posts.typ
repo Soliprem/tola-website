@@ -1,17 +1,21 @@
 #import "index.typ": *
-#show: template
 
-= Posts
+#show: template.with(
+  title: "Posts"
+)
 
-== 2025
-
-- #link("./posts/aerei/")[Oltre la Curva a S: Un Approccio di Network alla Transizione Sostenibile della Mobilità Aerea]
-- #link("./posts/land-of-echoes")[The Land of Echoes]
-- #link("./posts/parallel_worlds/")[Parallel Worlds]
-
-== 2024
-
-- #link("./posts/sisifo")[La figura di Shostakovich come un Sisifo moderno]
-- #link("./posts/new_approach_socsci")[New Approaches to Social Sciences]
-- #link("./posts/gun_deaths_paper/")[An analysis of the correlation between gun regulation and public safety in the USA]
-- #link("./posts/why")[Why]
+#let pages = json("/_data/pages.json")
+#let posts = pages.filter(p => 
+  p.url.starts-with("/posts/") and p.url != "/posts/"
+)
+#let sorted-posts = posts.sorted(key: p => p.at("date", default: "0000-00-00")).rev()
+#let current-year = ""
+#for post in sorted-posts {
+  let date-str = post.at("date", default: "")
+  let year = if date-str != "" { date-str.slice(0, 4) } else { "Undated" }
+  if year != current-year {
+    [== #year]
+    current-year = year
+  }
+  [- #link(post.url)[#post.title]]
+}
