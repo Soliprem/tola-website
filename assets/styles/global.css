@@ -3,11 +3,6 @@
    ========================================================================== */
 
 /* Dark Mode Media Fixes */
-@media (prefers-color-scheme: dark) {
-  [role="math"] :is(img, svg, canvas, picture, video, object, embed) {
-    filter: invert(1) hue-rotate(180deg);
-  }
-}
 
 body {
   @apply leading-relaxed;
