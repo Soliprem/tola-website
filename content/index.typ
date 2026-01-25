@@ -23,7 +23,7 @@ Welcome to my corner of the web. I'm a student, hobby dev, and enthusiast of all
 == Current Projects
 
 - *This website*: Rebuilding it from scratch using Typst for content generation
-- #link("https://soliprem.bandcamp.com/follow_me")[*Bandcamp!*]: You can follow me there for my music. I like them, as I don't really want it scraped by LLMs.
+- #link("https://soliprem.bandcamp.com/follow_me")[*Bandcamp!*]: You can follow me there for my music.
 - *#link("https://github.com/notashelf/nvf")[NVF]*: Cool stuff, also happens to be raf-ware
 
 = More fun parts of the Web!
