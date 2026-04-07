@@ -81,6 +81,7 @@
             #html.elem("a", attrs: (href: "/posts/"), "~/posts")
             #html.elem("a", attrs: (href: "/about/"), "~/about")
             #html.elem("a", attrs: (href: "/contact/"), "~/contacts")
+            #html.elem("a", attrs: (href: "/orbit/"), "~/orbit")
             #html.elem("a", attrs: (href: "/music/"), "~/music")
             #context {
               let fn-count = counter(footnote).final().at(0)
