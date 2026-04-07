@@ -164,5 +164,4 @@ retains the increased reproducibility that we see when we apply technological
 solutions to problems, thus making it easily scalable to maintain large sample
 sizes.
 
-We will be analysing possible solutions in [future posts](index.xml).
-
+We will be analysing possible solutions in #link("/feed.xml")[future posts].

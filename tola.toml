@@ -1,4 +1,4 @@
-[base]
+[site.info]
 title = "Soliprem"
 url = "https://soliprem.eu"
 author = "Francesco Prem Solidoro"
@@ -10,19 +10,20 @@ copyright = ""
 [build]
 content = "content"
 output = "public"
-assets = "assets"
 deps = [
     "templates",
-    "utils",
 ]
 data = "_data"
 minify = true
 
-[build.rss]
+[build.assets]
+nested = ["assets"]
+
+[site.seo.feed]
 enable = true
 path = "feed.xml"
 
-[build.sitemap]
+[site.seo.sitemap]
 enable = false
 path = "sitemap.xml"
 
@@ -30,23 +31,12 @@ path = "sitemap.xml"
 path = "safe"
 fragment = "safe"
 
-[build.typst]
-command = ["typst"]
-
-[build.typst.svg]
-extract_type = "embedded"
-inline_max_size = "20KB"
-dpi = 96.0
-
-[build.css]
-auto_enhance = true
-
-[build.css.tailwind]
+[build.hooks.css]
 enable = true
 command = ["tailwindcss"]
-input = "./assets/styles/style.css"
+path = "assets/styles/style.css"
 
-[build.head]
+[site.header]
 styles = []
 scripts = []
 elements = ['<link rel="alternate" type="application/rss+xml" href="/feed.xml">']
@@ -55,19 +45,3 @@ elements = ['<link rel="alternate" type="application/rss+xml" href="/feed.xml">'
 interface = "127.0.0.1"
 port = 5277
 watch = true
-
-[deploy]
-provider = "github"
-force = false
-
-[deploy.github]
-url = "https://github.com/alice/alice.github.io"
-branch = "main"
-
-[deploy.cloudflare]
-provider = "github"
-
-[deploy.vercel]
-provider = "github"
-
-[extra]

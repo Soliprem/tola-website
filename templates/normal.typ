@@ -4,10 +4,24 @@
   summary: none,
   body
 ) = {
+  let parse-date = s => {
+    if s == none { return none }
+    if type(s) == datetime { return s }
+    let s = str(s).split("T").at(0)
+    let parts = s.split("-")
+    assert(parts.len() == 3, message: "Invalid date format: '" + s + "', expected YYYY-MM-DD")
+    datetime(year: int(parts.at(0)), month: int(parts.at(1)), day: int(parts.at(2)))
+  }
+
+  let meta-date = if date != none and type(date) == str {
+    parse-date(date)
+  } else {
+    date
+  }
 
   [#metadata((
       title: title,
-      date: date,
+      date: meta-date,
       summary: summary,
     )) <tola-meta>]
 
@@ -90,7 +104,7 @@
           ]
         
           #if date != none [
-            #html.elem("time", attrs: (datetime: date, class: "page-date text-gray-500 font-mono text-sm"), [#date])
+            #html.elem("time", attrs: (datetime: str(date), class: "page-date text-gray-500 font-mono text-sm"), [#date])
           ]
         ])
       ]
