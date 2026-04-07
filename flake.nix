@@ -24,8 +24,8 @@
             tailwindcss
           ];
           shellHook = ''
-            export SHELL=${pkgs.nushell}/bin/nu
-            exec nu
+            export SHELL=${pkgs.fish}/bin/fish
+            exec fish
           '';
         };
       };
