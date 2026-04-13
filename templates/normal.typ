@@ -79,10 +79,11 @@
         #html.elem("div", attrs: (class: "terminal-links"), [
             #html.elem("a", attrs: (href: "/"), "~/")
             #html.elem("a", attrs: (href: "/posts/"), "~/posts")
+            #html.elem("a", attrs: (href: "/orbit/"), "~/orbit")
+            #html.elem("a", attrs: (href: "/land-of-echoes/"), "~/land-of-echoes")
+            #html.elem("a", attrs: (href: "/music/"), "~/music")
             #html.elem("a", attrs: (href: "/about/"), "~/about")
             #html.elem("a", attrs: (href: "/contact/"), "~/contacts")
-            #html.elem("a", attrs: (href: "/orbit/"), "~/orbit")
-            #html.elem("a", attrs: (href: "/music/"), "~/music")
             #context {
               let fn-count = counter(footnote).final().at(0)
               if fn-count > 0 {
