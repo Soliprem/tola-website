@@ -23,10 +23,6 @@
             tola.packages.${pkgs.stdenv.hostPlatform.system}.default
             tailwindcss
           ];
-          shellHook = ''
-            export SHELL=${pkgs.fish}/bin/fish
-            exec fish
-          '';
         };
       };
     };
