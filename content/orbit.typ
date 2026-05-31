@@ -15,6 +15,7 @@ The current modules are
 - #link("/orbit/magic/")[Magic system]: a flexible spellcasting system
 - #link("/orbit/wounds/")[Wound system]: wound-based damage system
 - #link("/orbit/initiative/")[Initiative system]: fixed-order and reaction-based approaches
+- #link("/orbit/resting/")[Resting system]: how to regain metacurrency and recover from wounds
 
 == Repository
 
