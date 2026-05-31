@@ -12,6 +12,7 @@ The current modules are
 
 - #link("/orbit/design/")[Design guide]: How to use Orbit
 - #link("/orbit/resolution/")[Resolution system]: the core resolution mechanics
+- #link("/orbit/character-creation/")[Character creation]: budgets, ability costs, and templates
 - #link("/orbit/magic/")[Magic system]: a flexible spellcasting system
 - #link("/orbit/wounds/")[Wound system]: wound-based damage system
 - #link("/orbit/initiative/")[Initiative system]: fixed-order and reaction-based approaches
