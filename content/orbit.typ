@@ -17,6 +17,7 @@ The current modules are
 - #link("/orbit/wounds/")[Wound system]: wound-based damage system
 - #link("/orbit/initiative/")[Initiative system]: fixed-order and reaction-based approaches
 - #link("/orbit/resting/")[Resting system]: how to regain metacurrency and recover from wounds
+- #link("/orbit/sheet.html")[Character Sheet]: a configurable, fillable character sheet
 
 == Repository
 
